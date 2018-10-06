@@ -94,8 +94,8 @@ class SearchTests(unittest.TestCase):
 	def test_search_if_search_finds_racecar_in_team(self):
 		self.assertEqual(search("Power", self.team_one), "Power is a racer")
 
-	# def test_search_if_search_not_finds_racecar_in_team(self):
-	# 	self.assertEqual(search("Duck", self.team_one), "Duck is not a racer")
+	def test_search_if_search_not_finds_racecar_in_team(self):
+		self.assertEqual(search("Duck", self.team_one), "Duck is not a racer")
 
 
 

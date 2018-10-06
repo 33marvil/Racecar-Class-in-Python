@@ -82,12 +82,28 @@ class Team:
 
 
 
-    """function to search a racecar in team"""
+"""function to search a racecar in team"""
 
-class Search:
 
-    def __init__(self, name):
-        self.__name = name
+def search(name, equipo):
+    return "{} is a racer".format(name) if len([racecar.name for racecar in equipo.team if name == racecar.name]) > 0 else "{} is not a racer".format(name)
+    #     return name + " is a racer"
+    # else:
+    #     return name + " is not a racer"
 
-    def search(self):
-        pass
+    # Si el largo de lista es ==  1 return " Power is a racer"
+    # Si no es == a 1 return " Duck is not a racer"
+
+
+
+
+
+
+
+
+
+
+
+# search race car in team
+#print(search("Power", team_one))
+# >> "Power is a racer"
